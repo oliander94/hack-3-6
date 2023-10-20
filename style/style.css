@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+*:root{
+    --box-select: #004AAD;
+    --bg: #290059;
+    --clr-letter: #1E0042;
+    --clr-letter-main: white;
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-letter-main);
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+.title{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container-plan{
+    margin: 3rem 25%;
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.pl{
+    position: relative;
+    width: 48%;
+    height: 50vh;
+    background-color: var(--clr-letter-main);
+    color: rgb(65, 63, 63);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pl::after{
+    position: absolute;
+    bottom: -1.5rem;
+    width: 70%;
+    height: 3rem;
+    content: "Select Plan";
+    background-color: var(--box-select);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: var(--clr-letter-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pl span{
+    display: block;
+
+}
+
+.pl>span:nth-child(1), .pl>span:nth-child(2){
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-letter);
+}
+
+.pl>span:nth-child(1){ 
+    margin-top: 1.5rem;
+}
+.pl>span:nth-child(n + 3){ 
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+hr{
+    width: 50%;
+    margin: .5rem 0 1rem;
+}
